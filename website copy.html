@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.4.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+    	body{margin-left: auto; margin-right: auto; text-align: center; background-color:#A2935E;}
+    	h1{font-family: 'Gugi', cursive; font-size: 18px; font-weight: normal; color:#DFFFF4;}
+    	h3{font-family: 'Gugi', cursive; font-size: 12px; font-weight: normal; color:#E53939;text-shadow:0 0 30px #DFFFF4}
+    	p{font-family: 'Nunito', sans-serif;font-size: 14px; font-weight: normal; color:#A2935E;text-shadow:0 0 20px #593F3F;}
+    	
+.slideshow {
+    position: relative;
+    margin-left: 20%;
+    max-width: 20%;
+    padding: 1%;
+}
+ 
+.slideshow > div {
+    position: absolute;
+}
+
+.slideshow > div > img {
+    box-shadow: 500px 0 50px #DFFFF4;
+    border: 1px dashed white;
+        border-radius: 5px;
+}
+
+.slideshow > div > video {
+    box-shadow: 500px 0 50px #DFFFF4;
+    border: 1px dashed white;
+    border-radius: 5px;
+}
+
+img {max-width: 100%}
+video {max-width: 100%}
+.solo {max-width:20%;}
+
+  </style>
+<title>vicky</title>
+</head>
+<body>
+	<select name="selectionField"> 
+  <option>virtual jewelry</option>
+  <option>video alphabet</option>
+  <option>figure drawing</option>
+  <option>landscape GIFs</option>
+  <option>8.5x11 posters</option>
+</select>
+	<div class="slideshow">
+	<div><img src="IMG_1645.JPG"></div>
+	<div><img src="IMG_0162.JPG"></div>
+	<div><img src="IMG_1109.PNG"></div>
+	<div><img src="IMG_1296.JPG"></div>
+	<div><img src="IMG_1951.JPG"></div>
+	<div><img src="IMG_0472.JPG"></div>
+	<div><img src="IMG_1481.JPG"></div>
+	<div><img src="IMG_1849.JPG"></div>
+	<div><img src="IMG_3758.JPG"></div>
+	<div><img src="IMG_2293.JPG"></div>
+	<div><video autoplay loop muted> <source src="pav-0C38E3FA-0369-4F2B-AFF0-4F96B921D060.mp4" type="video/mp4"></video></div>
+	<div><img src="IMG_0417.JPG"></div>
+	<div><img src="Image-1-7.JPEG"></div>
+	<div><video autoplay loop muted> <source src="ips-4BCEFA3B-3D4F-445A-89FB-59911ABC58C7.mp4" type="video/mp4"></video></div>
+	<div><img src="IMG_4022.JPG"></div>
+<div><video autoplay loop muted> <source src="sstg-894C888A-659D-4C7F-B0F6-B4564911F124.mp4" type="video/mp4"></video></div>
+
+</div>
+	<div class="solo"><video autoplay loop muted> <source src="ipv-FF69D23C-2269-4DAC-BB17-AB4D9A1B6C7C.MP4" type="video/mp4"></video></div>
+	<div class="solo"><video autoplay loop muted> <source src="sstg-B241262A-9159-4C81-BBCD-673D8038EBF4.mov" type="video/mp4"></video></div>
+		<div class="solo"><img src="IMG_1352.JPG"></div>
+	<ul>
+<h1>about</h1>
+<div class="writing">
+<p>hello! my name's vicky<br><br>
+i'm a 22-year-old artist <br>based in new haven, ct<br><br>
+i love working with<br>
+color, motion, and repetition<br>
+<br>
+i enjoy thinking about<br>
+bodies, biology, and waste<br>
+<br>
+i respond to <br>
+stories, ideas, and compliments<br>
+(also, emails)
+</p>
+</div>
+<br>
+<h1>writing</h1>
+<h1>posters</h1><br>
+<h1>videos</h1>
+<h3>VIRTUAL JEWELRY</h3>
+<h3>VIDEO ALPHABET</h3>
+<h3>AUGMENTED REALITY</h3><br>
+<h1>sculptures</h1>
+<h3>KIOSK</h3>
+<h3>BIKE</h3>
+<h3>FUNERAL</h3>
+<br>
+
+
+</ul>
+<script>
+	$(".slideshow > div").hide();
+ 
+setInterval(function() {
+  $('.slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('.slideshow');
+},  3000);
+</script>
+</body>
+</html>
